@@ -24,14 +24,17 @@ inv_x <- NULL
 }
 
 
-## Retrieves the cached inverse of matrix x if it's available.
+# Retrieves the cached inverse of matrix x if it's available
+# and checks to make sure it hasn't been altered.
 # If it is not, then it computes and caches it.
 
 cacheSolve <- function(x, ...) {
         inv_x <- x$getinverse()
         if(!is.null(inv_x)) {
+                if (x$set() == x$get(){
                 message("getting cached inverse")
                 return(inv_x)
+                }
         } else
         {
         inv_x <- solve(x$get(), ...)
