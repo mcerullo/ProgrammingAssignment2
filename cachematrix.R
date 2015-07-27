@@ -1,7 +1,5 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## This function gets, sets, and stores the inverse of x. It 
+## The first in thispair of functions gets, sets, and stores the inverse of x. 
+## The second computes and stores the inverse of x
 
 # return a list that contains the output of specific functions within it
 # so it can be used as follows:
